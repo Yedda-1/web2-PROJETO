@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Fundo azulado claro */
+    padding: 20px;
+    margin: 0; /* Adicionado para remover margem padrão do body */
+    display: flex; /* Para centralizar o container na tela */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que ocupa a altura total da viewport */
+    color: #072f60; /* Cor das letras em azul escuro */
+}
+
+.navbar {
+    background-color: #0056b3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px double #072f60;
+    border-radius: 10px;
+    box-shadow: -5px 5px 3px rgba(0, 72, 186, 0.6), -4px -4px 1px 5px rgba(0, 72, 186, 0.5); /* Sombras combinadas */
+    max-width: 92%;
+    margin: auto auto 20px auto; /* Centraliza e adiciona margem inferior */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000; /* Cor do ícone da casa */
+    font-size: 2em; /* Tamanho maior para o ícone */
+}
+
+.container {
+    max-width: 90%;
+    width: 100%; /* Garante que o container ocupe a largura máxima definida */
+    margin: auto; /* Centraliza o container */
+    background: #fff;
+    padding: 20px;
+    border: 2px double #072f60;
+    border-radius: 10px;
+    box-shadow: -4px -4px 1px 5px rgba(0, 72, 186, 0.3);
+    box-sizing: border-box; /* Inclui padding e border na largura/altura total */
+    text-align: center; /* Centraliza o texto e formulário */
+}
+
+h2 {
+    text-align: center;
+    color: #072f60;
+    box-shadow: 5px 8px 12px rgba(0, 72, 186, 0.3);
+    padding: 10px; /* Adicionado padding para a sombra ficar visível */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.fas.fa-sign-in-alt { /* Ícone específico para login */
+    color: #00f; /* Cor azul neon para o ícone */
+    text-shadow: 0 0 5px #00f, 0 0 15px #00f; /* Sombra azul neon para o ícone */
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+    box-shadow: 5px 8px 12px rgba(0, 72, 186, 0.3);
+    padding: 10px; /* Adicionado padding para a sombra */
+    background-color: #f9f9f9; /* Leve fundo para o grupo */
+    border-radius: 5px; /* Bordas arredondadas para o grupo */
+    text-align: left; /* Alinha labels e inputs à esquerda dentro do grupo */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #072f60;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 8px); /* Ajustado para 100% menos bordas */
+    padding: 10px;
+    border: 4px double #072f60;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 12px rgba(0, 72, 186, 0.3);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 8px 12px rgba(0, 72, 186, 0.3);
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 5px 8px 12px rgba(0, 72, 186, 0.3);
+}
+
+/* Estilos para mensagens de resposta */
+.mensagem {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensagem.sucesso { /* Classe para mensagem de sucesso */
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
+    border: 1px solid #c3e6cb; /* Borda verde */
+}
+
+.mensagem.erro { /* Classe para mensagem de erro */
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    border: 1px solid #f5c6cb; /* Borda vermelha */
+}
+
+a {
+    color: #072f60;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para o campo de senha com ícone */
+.input-com-icone {
+    position: relative; /* Essencial para posicionar o ícone dentro */
+    width: 100%;
+}
+
+.input-com-icone input {
+    /* Garante que o input ocupe o espaço e o ícone não atrapalhe */
+    padding-right: 40px; /* Espaço extra para o ícone */
+}
+
+.icone-senha {
+    position: absolute; /* Posiciona o ícone sobre o input */
+    right: 10px; /* Distância da direita do input */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralização exata */
+    cursor: pointer; /* Indica que é clicável */
+    color: #072f60; /* Cor do ícone */
+    font-size: 1.2em; /* Tamanho do ícone */
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda padrão */
+    padding: 5px; /* Adiciona padding para facilitar o clique */
+}
+
+.icone-senha:hover {
+    color: #007bff; /* Mudar cor ao passar o mouse */
+}

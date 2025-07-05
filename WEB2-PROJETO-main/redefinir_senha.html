@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Redefinir Sua Senha</h2>
+        <p>Digite sua nova senha abaixo.</p>
+        <form id="redefinirSenhaForm" action="php/redefinir_senha_process.php" method="POST">
+            <div class="grupo-formulario">
+                <label for="nova_senha">Nova Senha:</label>
+                <input type="password" id="nova_senha" name="nova_senha" required placeholder="Sua nova senha">
+            </div>
+            <div class="grupo-formulario">
+                <label for="confirma_senha">Confirmar Senha:</label>
+                <input type="password" id="confirma_senha" name="confirma_senha" required placeholder="Confirme sua nova senha">
+            </div>
+            <input type="hidden" id="token" name="token">
+            <button type="submit" class="btn-submit">Redefinir Senha</button>
+            <div id="mensagemResposta" class="mensagem"></div>
+        </form>
+    </div>
+    <script src="js/redefinir_senha.js"></script>
+</body>
+</html>

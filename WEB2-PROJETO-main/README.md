@@ -1,0 +1,25 @@
+# WEB1-PROJETO
+OBJETIVO REGISTRAR O DESENVOLVIMENTO DO PROJETO DA DA DISCIPLINA DE DESENVOLVIMENTO WEB 1
+
+WEB1-PROJETO/
+├── CONTATO.css
+├── CONTATO.html
+├── CONTATO.js
+├── LISTA.css
+├── LISTA.html
+├── LISTA.js
+├── HOME.css
+├── HOME.js
+├── LGPD.css
+├── LGPD.html
+├── LGPD.js
+├── LICENSE
+├── README.md
+├── SOBRE.css
+├── SOBRE.html
+├── SOBRE.js
+├── FERRAMENTAS.css
+├── FERRAMENTAS.html
+├── FERRAMENTAS.js
+├── index.html
+

@@ -1,0 +1,18 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d7ebfc; /* Fundo claro */
+    color: #333; /* Cor do texto em cinza escuro */
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d3d3d3; 
+    border: 5px double #072f60; /* Bordas duplas azul escuro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

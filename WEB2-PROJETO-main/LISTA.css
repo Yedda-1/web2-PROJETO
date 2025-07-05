@@ -1,0 +1,121 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Fundo azulado */
+    color: #072f60; /* Cor das letras em azul escuro */
+}
+
+/* Conteúdo */
+.container {
+    border: 5px double #072f60; /* Bordas duplas ao redor do conteúdo */
+    padding: 20px;
+    margin: 20px;
+    background-color: #d3d3d3; /* Cor de fundo cinza */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent; /* Transparente para mostrar o fundo do container */
+}
+
+th, td {
+    border: 5px double #072f60; /* Bordas duplas azul escuro */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #797676; /* Fundo cabeçalhos */
+    color: #fff; /* Cor do texto branco nos cabeçalhos */
+}
+
+/* Links */
+a {
+    color: #072f60; /* Cor dos links em azul escuro */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2ab7f8; /* cor dos links ao passar o mouse (azul neon) */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+
+/* ajuste do conteudo da tabela telas menores/extrapolando o container */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Garante que o conteúdo da tabela não quebre para a próxima linha */
+    }
+
+    th, td {
+        padding: 5 px;
+        text-align: center;
+    }
+
+    th {
+        font-size: 14px; /* Reduz o tamanho da fonte dos cabeçalhos */
+    }
+
+    td {
+        font-size: 12px; /* Reduz o tamanho da fonte das células */
+    }
+}
+
+table img {
+  width: 100%;  /* imagem 100% da largura da célula */
+  height: auto; /* proporção da imagem */
+  object-fit: contain; /* imagem sem distorção */
+}
+
+
+
+td img {
+    width: 100%;          /* IMAGEM OCUPA 100% */
+    height: auto;         /*  proporção das imagens */
+    display: block;       /* força cada imagem a ocupar uma nova linha */
+    margin-bottom: 5px;   /* margem entre as imagens */
+}
+
+
+/* COLUNAS DA MESMA LARGURA*/
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table td {
+  width: 25%; /* Ajuste colunas */
+}
+
+
+/* Regras para todas as imagens dentro de células da tabela */
+td img {
+    max-width: 120px; /* Define uma largura máxima para a imagem */
+    height: auto;     /* Mantém a proporção original */
+    display: block;   /* Garante que cada imagem ocupe sua própria linha */
+    margin-right: auto; /* Centraliza a imagem se a célula for maior que a imagem */
+    margin-left: auto;  /* Centraliza a imagem */
+    margin-bottom: 5px; /* Adiciona um pequeno espaço entre imagens verticais */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar ou distorcer */
+}
+
+/* Se as imagens estiverem dentro de links (<a>), aplique também */
+td a img {
+    max-width: 120px; /* Garante que a imagem dentro do link também respeite o tamanho máximo */
+    height: auto;
+}
+
+

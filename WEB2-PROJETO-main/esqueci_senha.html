@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci Minha Senha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Esqueci Minha Senha</h2>
+        <p>Informe seu CPF ou E-mail para receber as instruções de redefinição de senha.</p>
+        <form id="solicitarRedefinicaoForm" action="php/solicitar_redefinicao.php" method="POST">
+            <div class="grupo-formulario">
+                <label for="identificador">CPF ou E-mail:</label>
+                <input type="text" id="identificador" name="identificador" required placeholder="Seu CPF ou E-mail">
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+            <div id="mensagemResposta" class="mensagem"></div>
+            <p class="link-cadastro">
+                Lembrou da senha? <a href="login.html">Fazer Login</a>
+            </p>
+        </form>
+    </div>
+    <script src="js/solicitar_redefinicao.js"></script>
+</body>
+</html>

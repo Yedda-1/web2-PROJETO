@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="CONTATO.css">
+    <script src="CONTATO.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">🏛️</a>
+        </div>
+        
+        <h2>Formulário de Contato</h2>
+        <form action="https://formspree.io/f/mrbbkkpz" method="POST">
+            <div class="grupo-formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="email">Email para resposta:</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="20" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

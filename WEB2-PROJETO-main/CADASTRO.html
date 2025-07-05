@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PROJETO 2</title>
+    <link rel="stylesheet" href="CADASTRO.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">🏛️</a>
+        </div>
+        <h2>Cadastre-se para Acessar! <span class="fas fa-user-plus"></span></h2>
+        <p>Preencha os campos abaixo para criar sua conta.</p>
+
+        <form id="cadastroForm" action="php/cadastro.php" method="POST">
+            <div class="grupo-formulario">
+                <label for="cpf">CPF (apenas números):</label>
+                <input type="text" id="cpf" name="cpf" maxlength="11" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="whatsapp">WhatsApp (apenas números, com DDD):</label>
+                <input type="text" id="whatsapp" name="whatsapp" maxlength="20" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="mensagem" id="mensagemResposta"></p> <p>Já tem uma conta? <a href="login.html">Faça Login aqui.</a></p>
+    </div>
+
+    <script src="CADASTRO.js"></script> </body>
+</html>

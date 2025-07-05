@@ -1,0 +1,43 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f8ff; /* Fundo azulado */
+    color: #072f60; /* Cor das letras em azul escuro */
+    border: 5px double #072f60; /* Bordas duplas */
+}
+
+
+header {
+    border: 5px double #072f60; /* Bordas duplas ao redor do header */
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f3;
+}
+
+.fas.fa-rocket {
+    color: #C0C0C0; /* Cor prata foguete */
+    background-color: #f0f0f3 ; /* Fundo  */
+   
+    border: 1px #00f; /* Borda azul neon */
+    padding: 0px;
+    border-radius: 50%; /* Borda arred. */
+    box-shadow: 0 0 10px #00f, 0 0 50px #00f; /* sombra azul neon */
+}
+
+.container {
+    border: 5px double #072f60; /* Bordas duplas */
+    padding: 20px;
+    margin: 20px;
+    background-color: #d3d3d3; /* Cor de fundo cinza */
+}
+
+.video-container {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
